@@ -7,14 +7,14 @@ import java.util.Map;
 public class Main {
 
     public static void main(String[] args) {
-        // below is the same examle program as in the assignment
+        // below is the same example program as in the assignment
 
         VehicleRegister ar = new VehicleRegister();
         ar.add(new RegistrationPlate("FI", "ABC-123"),"Arto");
         ar.add(new RegistrationPlate("FI","BBB-222"),"Pekka");
         ar.printRegistrationPlates();
 
-        System.out.println("");
+        System.out.println();
 
         RegistrationPlate reg1 = new RegistrationPlate("FI", "ABC-123");
         RegistrationPlate reg2 = new RegistrationPlate("FI", "UXE-465");
@@ -34,8 +34,8 @@ public class Main {
         // if the equals method hasn't been overwritten, the same registration plate is repeated in the list
 
         Map<RegistrationPlate, String> owners = new HashMap<RegistrationPlate, String>();
-        owners.put(reg1, "Arto");
-        owners.put(reg3, "Jürgen");
+        owners.put(reg1, "John ");
+        owners.put(reg3, "Bill");
 
         System.out.println("owners:");
         System.out.println(owners.get(new RegistrationPlate("FI", "ABC-123")));
